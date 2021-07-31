@@ -1,0 +1,9 @@
+.french{
+  background: repeating-linear-gradient(
+  45deg,
+  #E0E0E0,
+  #EEEEEE 10px,
+  #E0E0E0 10px,
+  #EEEEEE 20px
+);
+}

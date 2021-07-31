@@ -1,24 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import SideBar from "./components/SideBar/SideBar";
+import { Row, Col } from "react-bootstrap";
+import Dashboard from "./components/DashBorad/Dashboard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Row className="w-100">
+      <Col md={2} sm={12}>
+        <SideBar />
+      </Col>
+      <Col md={10} sm={12}>
+        <Dashboard />
+      </Col>
+    </Row>
   );
 }
 
